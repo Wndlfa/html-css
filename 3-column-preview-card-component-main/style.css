@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'bigshoulder';
+    src: url(fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+
+main {
+    min-width: 580px;
+    max-width: 100%;
+    margin: auto;
+}
+
+  :root {
+    --brightorange: hsl(31, 77%, 52%);
+    --darkcyan:     hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+  }
+
+
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+
+  img {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 50px;
+  }
+
+  .coluna1 {
+    float: left;
+    width: 220px;
+    height: 350px;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    max-width: 100%;
+  }
+
+  .coluna2 {
+    float: left;
+    width: 220px;
+    height: 350px;
+    background-color: hsl(184, 100%, 22%);
+    max-width: 100%;
+  }
+
+  .coluna3 {
+    float: left;
+    width: 220px;
+    height: 350px;
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    max-width: 100%;
+  }
+  
+  .row:after {
+    display: table;
+    clear: both;
+  }
+
+  div > h1 {
+     font-family: 'bigshoulder';
+     color: white;
+     margin-left: 25px;
+  }
+
+  div > p {
+    font-family: 'Lexend Deca';
+    color: white;
+    letter-spacing: 1px;
+    line-height: 16px;
+    font-size: 10px;
+    font-weight: 250;
+    margin-left: 25px;
+    margin-right: 15px;
+    
+  }
+  
+  .button1 {
+    background-color: white;
+    font-family: 'Lexend Deca';
+    color: var(--brightorange);
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+    margin-top: 60px;
+    margin-left: 25px;
+    padding: 6px 15px;
+    transition: 0.3s ease;
+  }
+
+  .button1:hover {
+    background-color: var(--brightorange);
+    color: white;
+    cursor: pointer;
+  }
+
+  .button2 {
+    background-color: white;
+    font-family: 'Lexend Deca';
+    color: var(--darkcyan);
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+    margin-top: 60px;
+    margin-left: 25px;
+    padding: 6px 15px;
+    transition: 0.3s ease;
+  }
+
+  .button2:hover {
+    background-color: var(--darkcyan);
+    color: white;
+    cursor: pointer;
+  }
+
+  .button3 {
+    background-color: white;
+    font-family: 'Lexend Deca';
+    color: var(--verydarkcyan);
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+    margin-top: 60px;
+    margin-left: 25px;
+    padding: 6px 15px;
+    transition: 0.3s ease;
+  }
+
+  .button3:hover {
+    background-color: var(--verydarkcyan);
+    color: white;
+    cursor: pointer;
+  }
+
+  .bouncein {
+    animation: bounceInLeft 1s ease 0s forwards;
+  }
+  @keyframes bounceInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    60% {
+      opacity: 0.8;
+      transform: translateX(30px);
+    }
+    80% { transform: translateX(-10px); }
+    100% { transform: translateX(0); 
+        opacity: 1;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  @media(max-width: 580px) {
+    .row {
+        display: flex;
+        top: 5%;
+        flex-direction: column;
+    }
+    .coluna1 {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    }
+  
