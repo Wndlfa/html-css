@@ -50,6 +50,13 @@ a:hover {
     text-decoration: underline;
 }
 
+a::after {
+    content: url(imagens/icons8-external-link-15.png);
+    margin: 10px;
+    text-decoration: underline;
+}
+
+
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -100,3 +107,6 @@ footer {
     padding: 10px;
     font-family: var(--fonte1);
 }
+
+
+
